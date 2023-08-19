@@ -1,10 +1,8 @@
 package main
 
 import (
-	"app/router"
+	"github.com/nikhileshsirohi/banking-system/app/router"
 )
-
-
 
 func main() {
 	router.StartServer()
