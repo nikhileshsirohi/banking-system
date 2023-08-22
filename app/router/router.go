@@ -32,4 +32,5 @@ func registerUserRoute(r *mux.Router) {
 	routeGroup.Use(middlewares.BasicAuthMiddleware)
 
 	routeGroup.HandleFunc("/signup", controllers.Signup).Methods("POST")
+	routeGroup.HandleFunc("/signin", controllers.Signin).Methods("POST")
 }
